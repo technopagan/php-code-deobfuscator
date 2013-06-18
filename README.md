@@ -20,4 +20,4 @@ In order for us to still do our jobs of analyzing & optimizing code, I created t
 
 ## How It Works
 
-Obfuscation simply makes PHP code less human-readable. It still needs to be parseable by PHP. So one the first thing that happens in the background during runtime of an obfuscated script is its deobfuscation so it once again becomes plain PHP code that can be executed. During normal operation, this is a step that is not visible to the user as it happens in memory. Using ltrace, we can retrieve this unobfuscated state of the script from memory and save it as a file, thus enabling us to read & understand the actual code.
+Obfuscation simply makes PHP code less human-readable. It still needs to be parseable by PHP. So the first thing that happens in the background during runtime of an obfuscated script is its deobfuscation so it once again becomes plain PHP code that can be executed. During normal operation, this is a step that is not visible to the user as it happens in memory. Using ltrace, we can retrieve this unobfuscated state of the script from memory and save it as a file, thus enabling us to read & understand the actual code.
